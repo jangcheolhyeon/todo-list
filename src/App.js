@@ -9,7 +9,7 @@ function App() {
   useEffect(() => {
     for(let i = 0; i < localStorage.length; i++) { 
       const todoInfo = JSON.parse(localStorage.getItem(i));
-      console.log(todoInfo);
+      // console.log(todoInfo);
       setTodos((prev) => [
         ...prev,
         {...todoInfo},

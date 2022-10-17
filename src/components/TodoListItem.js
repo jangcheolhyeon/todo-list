@@ -34,16 +34,16 @@ export const TodoListItem = ({ ele, todos, setTodos, index }) => {
         const newTodos = [...todos];
         newTodos[index].isChecked = !newTodos[index].isChecked;
         setTodos(newTodos);
-        console.log(todos);
+        // console.log(todos);
     }
 
     const onChangeEditInput = (e) => {
-        console.log(e.target.value);
+        // console.log(e.target.value);
         setNewText(e.target.value);
     } 
 
     const onClickEditButton = () => {
-        console.log(todos);
+        // console.log(todos);
         setEdited((prev) => !prev);
     }
 
@@ -60,8 +60,8 @@ export const TodoListItem = ({ ele, todos, setTodos, index }) => {
         //     })
         // )
 
-        console.log(index);
-        console.log(newtext);
+        // console.log(index);
+        // console.log(newtext);
         localStorage.setItem(index, newtext);
     }
 
